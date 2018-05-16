@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace batSystem.Models
 {
-    class User
+   public class User
     {
-        long UserID { get; set; }
-        string Login { get; set; }
-        string Password { get; set; }
-        string Salt { get; set; }
-        string LastName { get; set; }
-        string FirstName { get; set; }
-        string SecondName { get; set; }
-        File Avatar { get; set; }
-        string Email { get; set; }
-        DateTime DateofBirth { get; set; }
-        Enum Status { get; set; }
+        public long UserID { get; set; }
+        public string Login { get; set; }
+        public string Password { get; set; }
+        public string Salt { get; set; }
+        public string LastName { get; set; }
+        public string FirstName { get; set; }
+        public string SecondName { get; set; }
+        public File Avatar { get; set; }
+        public string Email { get; set; }
+        public DateTime DateofBirth { get; set; }
+        public Enum Status { get; set; }
         //UserGroup Usergroup { get; set; }
     }
 }

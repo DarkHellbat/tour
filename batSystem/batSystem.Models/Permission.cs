@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace batSystem.Models
 {
-    class Permission
+    public class Permission
     {
-        long PermissionID { get; set; }
-        int PermissionLevel { get; set; }
-        string Description { get; set; }
+        public long PermissionID { get; set; }
+        public int PermissionLevel { get; set; }
+        public string Description { get; set; }
     }
 }

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace batSystem.Models
 {
-    class File
+    public class File
     {
-        long FileId { get; set; }
-        string Path { get; set; }
-        Enum Type { get; set; }
-        double Size { get; set; }
+        public long FileId { get; set; }
+        public string Path { get; set; }
+        public Enum Type { get; set; }
+        public double Size { get; set; }
     }
 }

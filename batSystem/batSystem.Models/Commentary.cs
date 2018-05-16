@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace batSystem.Models
 {
-    class Commentary
+    public class Commentary
     {
-        long CommentaryID { get; set; }
-        string Text { get; set; }
-        User Sender { get; set; }
-        File PinnedFile { get; set; }
-        Commentary AnswerTo { get; set; }
+        public long CommentaryID { get; set; }
+        public string Text { get; set; }
+        public User Sender { get; set; }
+        public File PinnedFile { get; set; }
+        public Commentary AnswerTo { get; set; }
     }
 }

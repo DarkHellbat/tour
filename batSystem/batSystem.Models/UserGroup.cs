@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace batSystem.Models
 {
-    class UserGroup
+    public class UserGroup
     {
-        long UserGroupID { get; set; }
-        string GroupName { get; set; }
-        string Description { get; set; }
-        List<User> UserList { get; set; }
-        File GroupAvatar { get; set; }
-        Permission AccessPermition { get; set; }
+        public long UserGroupID { get; set; }
+        public string GroupName { get; set; }
+        public string Description { get; set; }
+        public List<User> UserList { get; set; }
+        public File GroupAvatar { get; set; }
+        public Permission AccessPermition { get; set; }
     }
 }

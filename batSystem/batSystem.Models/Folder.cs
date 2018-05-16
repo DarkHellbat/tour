@@ -7,16 +7,16 @@ using System.Linq.Expressions;
 
 namespace batSystem.Models
 {
-     class Folder
+    public class Folder
     {
-         long FolderID {get;set ;}
-         string Foldername { get; set; }
-        Folder ParentFolder { get; set; }
-        DateTime CreationDate { get; set; }
-        DateTime ChangeDate { get; set; }
-        User Author { get; set; }
-        User ChangedBy { get; set; }
-        Permission AllowAccessTo { get; set; }
+        public long FolderID {get;set ;}
+        public string Foldername { get; set; }
+        public Folder ParentFolder { get; set; }
+        public DateTime CreationDate { get; set; }
+        public DateTime ChangeDate { get; set; }
+        public User Author { get; set; }
+        public User ChangedBy { get; set; }
+        public Permission AllowAccessTo { get; set; }
 
         
         public void PathSearch()

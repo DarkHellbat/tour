@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace batSystem.Models
 {
-    class Version
+    public class Version
     {
-        long VersionID { get; set; }
-        File File { get; set; }
-        string VersionNumber { get; set; } //на случай если версия имеет формат "3.12.1554"
-        Document Document { get; set; } //в версии есть ссылка на документ, а в документе - лист версий - ?
-        DateTime CreationDate { get; set; }
-        DateTime ChangeDate { get; set; }
-        User Author { get; set; }
-        Enum Status { get; set; }
+        public long VersionID { get; set; }
+        public File File { get; set; }
+        public string VersionNumber { get; set; } //на случай если версия имеет формат "3.12.1554"
+        public Document Document { get; set; } //в версии есть ссылка на документ, а в документе - лист версий - ?
+        public DateTime CreationDate { get; set; }
+        public DateTime ChangeDate { get; set; }
+        public User Author { get; set; }
+        public Enum Status { get; set; }
 
     }
 }
