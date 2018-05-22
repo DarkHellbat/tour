@@ -8,11 +8,11 @@ namespace batSystem.Models
 {
     public class UserGroup
     {
-        public long UserGroupID { get; set; }
-        public string GroupName { get; set; }
-        public string Description { get; set; }
-        public List<User> UserList { get; set; }
-        public File GroupAvatar { get; set; }
-        public Permission AccessPermition { get; set; }
+        public virtual long UserGroupID { get; set; }
+        public virtual string GroupName { get; set; }
+        public virtual string Description { get; set; }
+        public virtual List<User> UserList { get; set; }
+        public virtual File GroupAvatar { get; set; }
+        public virtual Permission AccessPermition { get; set; }
     }
 }

@@ -8,10 +8,11 @@ namespace batSystem.Models
 {
     public class Commentary
     {
-        public long CommentaryID { get; set; }
-        public string Text { get; set; }
-        public User Sender { get; set; }
-        public File PinnedFile { get; set; }
-        public Commentary AnswerTo { get; set; }
+        public virtual long CommentaryID { get; set; }
+        public virtual string Text { get; set; }
+        public virtual User Sender { get; set; }
+        public virtual File PinnedFile { get; set; }
+        public virtual Commentary AnswerTo { get; set; }
+        public virtual Document ReferredTo { get; set; }
     }
 }

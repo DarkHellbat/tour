@@ -8,8 +8,9 @@ namespace batSystem.Models
 {
     public class Permission
     {
-        public long PermissionID { get; set; }
-        public int PermissionLevel { get; set; }
-        public string Description { get; set; }
+        public virtual long PermissionID { get; set; }
+        public virtual int PermissionLevel { get; set; }
+        public virtual string Description { get; set; }
+        public virtual Folder ReferredTo { get; set; }
     }
 }

@@ -8,11 +8,11 @@ namespace batSystem.Models
 {
     public class Document : Folder
     {
-        public long DocumentID { get; set; }
-        public string Description { get; set; }
-        public List<Version> VersionList { get; set; }
-        public string DocumentType { get; set; }
-        publicList<Commentary> CommentaryList { get; set; }
+        public virtual long DocumentID { get; set; }
+        public virtual string Description { get; set; }
+        public virtual List<Version> VersionList { get; set; }
+        public virtual string DocumentType { get; set; }
+        public virtual List<Commentary> CommentaryList { get; set; }
 
 
     }

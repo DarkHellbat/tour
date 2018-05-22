@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,19 +7,24 @@ using System.Threading.Tasks;
 
 namespace batSystem.Models
 {
-   public class User
+   public class User: IUser<long>
     {
-        public long UserID { get; set; }
-        public string Login { get; set; }
-        public string Password { get; set; }
-        public string Salt { get; set; }
-        public string LastName { get; set; }
-        public string FirstName { get; set; }
-        public string SecondName { get; set; }
-        public File Avatar { get; set; }
-        public string Email { get; set; }
-        public DateTime DateofBirth { get; set; }
-        public Enum Status { get; set; }
+        public virtual long Id { get; set; }
+        public virtual string UserName { get; set; }
+        public virtual string Password { get; set; }
+        public virtual string Salt { get; set; }
+        public virtual string LastName { get; set; }
+        public virtual string FirstName { get; set; }
+        public virtual string SecondName { get; set; }
+        public virtual File Avatar { get; set; }
+        public virtual string Email { get; set; }
+        public virtual DateTime DateofBirth { get; set; }
+        public virtual UserStatus Status { get; set; }
+        public virtual UserGroup InGroup { get; set; }
+
+        //public List<User> list;  
+
+
         //UserGroup Usergroup { get; set; }
     }
 }

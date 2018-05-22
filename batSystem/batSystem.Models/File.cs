@@ -8,9 +8,9 @@ namespace batSystem.Models
 {
     public class File
     {
-        public long FileId { get; set; }
-        public string Path { get; set; }
-        public Enum Type { get; set; }
-        public double Size { get; set; }
+        public virtual long FileId { get; set; }
+        public virtual string Path { get; set; }
+        public virtual Enum Type { get; set; }
+        public virtual double Size { get; set; }
     }
 }

@@ -1,0 +1,44 @@
+﻿@model batSystem.Models.ChangeUserModel
+@{
+    ViewBag.Title = "ChangeUser";
+}
+
+<h2>ChangeUser</h2>
+@using (Html.BeginForm())
+{
+    <table>
+        <tr>
+            <td>
+                @Html.LabelFor(m => m.UserName)
+            </td>
+           
+            <td>
+                @Html.LabelFor(m => m.FirstName)
+            </td>
+            <td>
+                @Html.LabelFor(m => m.SecondName)
+            </td>
+            <td>
+                @Html.LabelFor(m => m.LastName)
+            </td>
+            <td>
+                @Html.LabelFor(m => m.Email)
+            </td>
+            <td>@Html.</td>
+        </tr>
+        <tr>
+            <td>  @Html.EditorFor(m => m.UserName)</td>
+
+            <td>  @Html.EditorFor(m => m.FirstName)</td>
+            <td>  @Html.EditorFor(m => m.SecondName)</td>
+            <td>  @Html.EditorFor(m => m.LastName)</td>
+            <td>  @Html.EditorFor(m => m.Email)</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button style="width:100%">Сохранить</button>
+            </td>
+        </tr>
+    </table>
+}
