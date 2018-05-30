@@ -32,12 +32,18 @@ namespace tour.Pages
 
         private void registration_Click(object sender, RoutedEventArgs e)
         {
-
+            variables.mnw.maincontainer.NavigationService.Navigate(new Uri(@"\Pages\RegistrationPage.xaml", UriKind.Relative));
         }
 
         private void findtour_Click(object sender, RoutedEventArgs e)
         {
+            variables.mnw.maincontainer.NavigationService.Navigate(new Uri(@"\Pages\CatalogPage.xaml", UriKind.Relative));
+        }
 
+        private void exit_Click(object sender, RoutedEventArgs e)
+        {
+            variables.current = null;
+            variables.mnw.maincontainer.NavigationService.Navigate(new Uri(@"\Pages\LoginPage.xaml", UriKind.Relative));
         }
     }
 }

@@ -24,15 +24,24 @@ namespace tour.Pages
         {
             InitializeComponent();
         }
-
+        DatabaseContext context = new DatabaseContext();
         private void Register_Click(object sender, RoutedEventArgs e)
         {
-
+            Client newClient = new Client();
+            newClient.Email = email.Text;
+            newClient.FirstName = fname.Text;
+            newClient.Gender = gender.Text;
+            newClient.LastName = lname.Text;
+            newClient.PassportNum = Convert.ToInt32(passnum.Text);
+            newClient.Phone = Convert.ToInt32(phone.Text);
+            newClient.SecondName = sname.Text;
+            context.Clients.Add(newClient);
+            context.SaveChanges();
         }
 
         private void exit_Click(object sender, RoutedEventArgs e)
         {
-
+            variables.mnw.maincontainer.NavigationService.GoBack();
         }
     }
 }

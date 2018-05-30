@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:tour.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      d:DesignHeight="500" d:DesignWidth="500"
       Title="RegistrationPage">
 
     <Grid>
@@ -50,8 +50,8 @@
         <DatePicker Grid.Row="5" Grid.Column="3" Name="birthdate" Grid.ColumnSpan="3"></DatePicker>
         <TextBox Grid.Row="6" Grid.Column="3" Name="phone" Grid.ColumnSpan="3" Height="Auto" Margin="30,10,30,11" Width="Auto" ></TextBox>
                <ComboBox Grid.Row="8" Grid.Column="3" Name="gender" Grid.ColumnSpan="3" Margin="30,6,30,1" Height="Auto" Width="Auto" ></ComboBox>
-
-       
+        <TextBlock Grid.Row="7" Grid.Column="1"> Номер паспорта</TextBlock>
+        <TextBox Name="passnum" Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="2"></TextBox>
 
         <Button Style="{StaticResource basic}" Name="Register" Grid.Row="11" Grid.Column="1" Click="Register_Click"  Grid.ColumnSpan="2">Register</Button>
         <Button Style="{StaticResource basic}" Name="exit" Grid.Row="12" Grid.Column="1" Click="exit_Click"  Grid.ColumnSpan="2">Exit</Button>

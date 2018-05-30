@@ -13,7 +13,7 @@
             <TextBlock Name="entered_as" >Вы вошли в систему как</TextBlock>
             <Button Style="{StaticResource basic}" Name="registration" Width="auto" Click="registration_Click">Зарегистрировать нового клиента</Button>
             <Button Style="{StaticResource basic}" Name="findtour" Width="auto" Click="findtour_Click">Найти подходщий тур</Button>
-           
+            <Button Name="exit" Click="exit_Click">Выход</Button>
         </StackPanel>  
     </Grid>
 </Page>
