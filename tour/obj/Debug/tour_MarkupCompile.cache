@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\User\source\repos\tour\obj\Debug\
+E:\ITUniver\repos\tour\obj\Debug\
 tour
 none
 false
 DEBUG;TRACE
-C:\Users\User\source\repos\tour\App.xaml
+E:\ITUniver\repos\tour\App.xaml
 7407058044
 
 25880008925
-18-781546784
+18571921419
 MainWindow.xaml;Pages\AdminMenu.xaml;Pages\AgentMenu.xaml;Pages\CatalogPage.xaml;Pages\DirMenu.xaml;Pages\LoginPage.xaml;Pages\RegistrationPage.xaml;
 
 False
