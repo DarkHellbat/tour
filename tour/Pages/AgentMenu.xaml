@@ -6,13 +6,13 @@
       xmlns:local="clr-namespace:tour.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="300"
-      Title="AgentMenu">
+      Title="AgentMenu" Loaded="Page_Loaded">
 
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Name="entered_as" >Вы вошли в систему как</TextBlock>
-            <Button Style="{StaticResource basic}" Name="registration" Width="auto">Зарегистрировать нового клиента</Button>
-            <Button Style="{StaticResource basic}" Name="findtour" Width="auto">Найти подходщий тур</Button>
+            <Button Style="{StaticResource basic}" Name="registration" Width="auto" Click="registration_Click">Зарегистрировать нового клиента</Button>
+            <Button Style="{StaticResource basic}" Name="findtour" Width="auto" Click="findtour_Click">Найти подходщий тур</Button>
            
         </StackPanel>  
     </Grid>

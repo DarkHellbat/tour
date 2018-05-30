@@ -16,5 +16,9 @@ namespace tour
         public Position Position { get; set; }
         public string Login { get; set; }
         public string Password { get; set; }
+        public override string ToString()
+        {
+            return this.LastName + ", " + this.FirstName;
+        }
     }
 }

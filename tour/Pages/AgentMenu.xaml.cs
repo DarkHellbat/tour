@@ -24,5 +24,20 @@ namespace tour.Pages
         {
             InitializeComponent();
         }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            entered_as.Text = entered_as.Text + variables.current.ToString();
+        }
+
+        private void registration_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void findtour_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
