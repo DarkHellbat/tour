@@ -23,6 +23,8 @@
             <Image Name="im2"></Image>
             <Image Name="im3"></Image>
         </StackPanel>
+        <Button Grid.Row="1" Style="{StaticResource basic}" Name="buy" Click="buy_Click"  VerticalAlignment="Bottom" HorizontalAlignment="Left">Купить</Button>
+
         <Button Grid.Row="1" Style="{StaticResource basic}" Name="next" Click="next_Click" VerticalAlignment="Bottom">--></Button>
     </Grid>
     

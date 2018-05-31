@@ -61,3 +61,9 @@ E:\ITUniver\repos\tour\obj\Debug\Pages\RegistrationPage.baml
 E:\ITUniver\repos\tour\obj\Debug\tour.g.resources
 E:\ITUniver\repos\tour\obj\Debug\tour.Properties.Resources.resources
 E:\ITUniver\repos\tour\obj\Debug\tour.csproj.GenerateResource.Cache
+E:\ITUniver\repos\tour\obj\Debug\Pages\BuyingPage.g.cs
+E:\ITUniver\repos\tour\obj\Debug\Pages\ClientChangingPage.g.cs
+E:\ITUniver\repos\tour\obj\Debug\Pages\TourViewPage.g.cs
+E:\ITUniver\repos\tour\obj\Debug\Pages\BuyingPage.baml
+E:\ITUniver\repos\tour\obj\Debug\Pages\ClientChangingPage.baml
+E:\ITUniver\repos\tour\obj\Debug\Pages\TourViewPage.baml

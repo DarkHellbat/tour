@@ -28,11 +28,12 @@ namespace tour.Pages
   public DatabaseContext context = new DatabaseContext();
         private void back_Click(object sender, RoutedEventArgs e)
         {
-            //Position p = new Position { PositionName = "agent" };
-            //context.Positions.Add(p);
-            //Worker w = new Worker { FirstName = "1", LastName = "2", Login = "qwert", Password = "qwert",  Position = p};
-            //context.Workers.Add(w);
-            //context.SaveChanges();
+            Position p = new Position { PositionName = "agent" };
+            context.Positions.Add(p);
+            Worker w = new Worker { FirstName = "1", LastName = "2", Login = "qwert", Password = "qwert", Position = p };
+            context.Workers.Add(w);
+            context.SaveChanges();
+            MessageBox.Show("");
         }
 
         private void log_Click(object sender, RoutedEventArgs e)
@@ -48,17 +49,17 @@ namespace tour.Pages
                     {
                         case ("agent"):
                             {
-                                variables.mnw.maincontainer.NavigationService.Navigate(new Uri(@"\Pages\AgentMenu.xaml", UriKind.Relative));
+                                variables.Redirect("AgentMenu");
                                 break;
                             }
                         case ("admin"):
                             {
-                                variables.mnw.maincontainer.NavigationService.Navigate(new Uri(@"\Pages\AdminMenu.xaml", UriKind.Relative));
+                                variables.Redirect("AdminMenu");
                                 break;
                             }
                         case ("dir"):
                             {
-                                variables.mnw.maincontainer.NavigationService.Navigate(new Uri(@"\Pages\DirMenu.xaml", UriKind.Relative));
+                                variables.Redirect("DirMenu");
                                 break;
                             }
                     }

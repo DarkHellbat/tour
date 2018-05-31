@@ -76,6 +76,9 @@
     <Compile Include="Pages\AgentMenu.xaml.cs">
       <DependentUpon>AgentMenu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\BuyingPage.xaml.cs">
+      <DependentUpon>BuyingPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\CatalogPage.xaml.cs">
       <DependentUpon>CatalogPage.xaml</DependentUpon>
     </Compile>
@@ -119,6 +122,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\AgentMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\BuyingPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

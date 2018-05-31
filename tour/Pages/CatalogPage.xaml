@@ -19,7 +19,7 @@
         </Grid.RowDefinitions>
         <StackPanel >
             <TextBlock HorizontalAlignment="Center">Выберите страну</TextBlock>
-            <TextBlock HorizontalAlignment="Center">Выберите количество дней</TextBlock>
+            <TextBlock HorizontalAlignment="Center">Выберите период</TextBlock>
             <TextBlock HorizontalAlignment="Center">Выберите качество обслуживания</TextBlock>
             <TextBlock></TextBlock>
             <TextBlock HorizontalAlignment="Center">Укажите диапазон цен</TextBlock>
@@ -27,17 +27,24 @@
         <StackPanel Grid.Column="1">
             <ComboBox Name="country"></ComboBox>
             <StackPanel Orientation="Horizontal">
-            <Slider Name="days" Width="200" Minimum="1" Maximum="20"></Slider>
+                <DatePicker Name="beginning"></DatePicker>
+                <TextBlock>   -   </TextBlock>
+                <DatePicker Name="ending"></DatePicker>
                 <TextBlock x:Name="d" >0 дней</TextBlock>
             </StackPanel>
-            <TextBlock Name="dayscount"></TextBlock>
+            <!--<TextBlock Name="dayscount"></TextBlock>-->
             <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                 <CheckBox Checked="r1_Checked" Name="r1">2 звезды</CheckBox>
                 <CheckBox  Checked="r2_Checked" Name="r2">3 звезды</CheckBox>
                 <CheckBox Checked="r3_Checked" Name="r3">4 звезды</CheckBox>
                 <CheckBox Checked="r4_Checked"  Name="r4">5 звезд</CheckBox>
             </StackPanel>
-
+            <TextBlock></TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Width="100" Name="mincost"></TextBox>
+                <TextBlock>   -   </TextBlock>
+                <TextBox Width="100" Name="maxcost"></TextBox>
+            </StackPanel>
             <Button VerticalAlignment="Bottom" Name="find" Style="{StaticResource basic}" Click="find_Click">Найти</Button>
         </StackPanel>
         <GroupBox Grid.Row="1" Grid.ColumnSpan="2" ScrollViewer.CanContentScroll="True">

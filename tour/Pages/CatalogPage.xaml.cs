@@ -27,19 +27,27 @@ namespace tour.Pages
         public List<int> rate;
         public DatabaseContext context = new DatabaseContext();
         private void find_Click(object sender, RoutedEventArgs e)
-        {
-           
-
-           foreach (var t in context.Tours)
+        {         
+           foreach (var t in context.Tours)//поиск 
             {
-                
-              if(t.Destination==country.Text)
+
+                if (t.Destination == country.Text && beginning.SelectedDate == t.TourBeginning && 
+                    ending.SelectedDate == t.TourEnding && t.Cost < Convert.ToInt32(maxcost.Text)) ;
                 {
                     for (int i = 0; i <= rate.Count; i++)//проверка соответствия рейтинга найденного тура
                     {
-
+                        if(t.Rate == rate[i])
+                        {
+                            variables.TourList.Add(t);
+                        }
                     }
                 }
+                if (variables.TourList.Count != 0)//проверка наличия
+                {
+                    tourview.NavigationService.Navigate(new Uri(@"LoginPage.xaml", UriKind.Relative));
+                }
+                else
+                    MessageBox.Show("Не найдены туры с заданными параметрами. Проверьте введенные данные");
             }
         }
 

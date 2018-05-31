@@ -28,12 +28,23 @@ namespace tour.Pages
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             name.Text = variables.TourList[num].TourName;
+            rate.Text = variables.TourList[num].Rate + " звезд";
+            days.Text = (variables.TourList[num].TourEnding - variables.TourList[num].TourBeginning).ToString() + " дней";
+            cost.Text = variables.TourList[num].Cost.ToString();
+            descr.Text = variables.TourList[num].Description;
         }
 
         private void next_Click(object sender, RoutedEventArgs e)
         {
+
             num++;
             Page_Loaded(sender, e);
+        }
+
+        private void buy_Click(object sender, RoutedEventArgs e)
+        {
+            variables.Buy = variables.TourList[num];
+            variables.Redirect("BuyingPage");
         }
     }
 }
