@@ -14,6 +14,7 @@ namespace tour
 
         }
         public DbSet<Client> Clients { get; set; }
+        public DbSet<Country> Countries { get; set; }
         public DbSet<Complain> Complains { get; set; }
         public DbSet<Doc> Docs { get; set; }
         public DbSet<Order> Orders { get; set; }
@@ -30,6 +31,7 @@ namespace tour
             modelBuilder.Entity<Client>().Property(c => c.SecondName).HasMaxLength(50);
             modelBuilder.Entity<Client>().Property(c => c.Email).HasMaxLength(50);
             modelBuilder.Entity<Client>().Property(c => c.Gender).HasMaxLength(50);
+            modelBuilder.Entity<Country>().Property(c => c.CountryName).HasMaxLength(50);
             modelBuilder.Entity<Complain>().Property(c => c.Text).HasMaxLength(200);
             modelBuilder.Entity<CType>().Property(c => c.Type).HasMaxLength(50);
             modelBuilder.Entity<Doc>().Property(d => d.DocName).HasMaxLength(100);

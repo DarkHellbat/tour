@@ -1,0 +1,60 @@
+﻿<Page x:Class="tour.Pages.ClientChangingPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:tour.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="500"
+      Title="ClientChangingPage" Loaded="Page_Loaded">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="84*"/>
+            <ColumnDefinition Width="83*"/>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="171*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="17*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="31*"/>
+            <RowDefinition Height="23*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="1" HorizontalAlignment="Right" Width="69" Grid.Column="1">First name</TextBlock>
+        <TextBlock Grid.Row="2" HorizontalAlignment="Right" Width="84" Grid.ColumnSpan="2">Second name</TextBlock>
+        <TextBlock Grid.Row="4" HorizontalAlignment="Right" Width="47" Grid.Column="1">E-mail</TextBlock>
+        <TextBlock Grid.Row="3" HorizontalAlignment="Right" Width="66" Grid.Column="1" >Last name</TextBlock>
+        <TextBlock Grid.Row="5" HorizontalAlignment="Right" Width="82" Grid.ColumnSpan="2">Date of birth</TextBlock>
+        <TextBlock Grid.Row="6" HorizontalAlignment="Right" Width="41" Grid.Column="1">Phone</TextBlock>
+        <TextBlock Grid.Row="8" HorizontalAlignment="Right" Width="53" Grid.Column="1">Gender</TextBlock>
+
+
+        <TextBox Grid.Row="1" Grid.Column="3" Name="fname" Grid.ColumnSpan="3" Height="Auto" Margin="30,11" Width="Auto"></TextBox>
+        <TextBox Grid.Row="2" Grid.Column="3" Name="sname"  Grid.ColumnSpan="3" Height="Auto" Margin="30,11" Width="Auto" ></TextBox>
+        <TextBox Grid.Row="3" Grid.Column="3" Name="lname" Grid.ColumnSpan="3" Height="Auto" Margin="30,11" Width="Auto" ></TextBox>
+        <TextBox Grid.Row="4" Grid.Column="3" Name="email"  Grid.ColumnSpan="3" Height="Auto" Margin="30,11" Width="Auto"></TextBox>
+        <DatePicker Grid.Row="5" Grid.Column="3" Name="birthdate" Grid.ColumnSpan="3"></DatePicker>
+        <TextBox Grid.Row="6" Grid.Column="3" Name="phone" Grid.ColumnSpan="3" Height="Auto" Margin="30,10,30,11" Width="Auto" ></TextBox>
+        <ComboBox Grid.Row="8" Grid.Column="3" Name="gender" Grid.ColumnSpan="3" Margin="30,6,30,1" Height="Auto" Width="Auto" ></ComboBox>
+        <TextBlock Grid.Row="7" Grid.Column="1"> Номер паспорта</TextBlock>
+        <TextBox Name="passnum" Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="2"></TextBox>
+
+        <Button Style="{StaticResource basic}" Name="save" Grid.Row="11" Grid.Column="1"  Grid.ColumnSpan="2" Click="save_Click">Сохранить изменения</Button>
+        <Button Style="{StaticResource basic}" Name="exit" Grid.Row="12" Grid.Column="1" Click="exit_Click"  Grid.ColumnSpan="2">Exit</Button>
+
+    </Grid>
+</Page>

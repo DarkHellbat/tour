@@ -17,5 +17,6 @@ namespace tour
         public string Destination { get; set; }
         public int Rate { get; set; }
         public Doc ReqDoc { get; set; }
+        public string PicName { get; set; }
     }
 }

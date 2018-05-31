@@ -10,5 +10,7 @@ namespace tour
     {
         public static MainWindow mnw = new MainWindow();
         public static Worker current = new Worker();
+        public static Client client = new Client();
+        public static List<Tour> TourList = new List<Tour>();
     }
 }

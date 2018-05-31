@@ -64,6 +64,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Complain.cs" />
+    <Compile Include="Country.cs" />
     <Compile Include="CType.cs" />
     <Compile Include="databaseConf.cs" />
     <Compile Include="Doc.cs" />
@@ -78,6 +79,9 @@
     <Compile Include="Pages\CatalogPage.xaml.cs">
       <DependentUpon>CatalogPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ClientChangingPage.xaml.cs">
+      <DependentUpon>ClientChangingPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\DirMenu.xaml.cs">
       <DependentUpon>DirMenu.xaml</DependentUpon>
     </Compile>
@@ -86,6 +90,9 @@
     </Compile>
     <Compile Include="Pages\RegistrationPage.xaml.cs">
       <DependentUpon>RegistrationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TourViewPage.xaml.cs">
+      <DependentUpon>TourViewPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Payment.cs" />
     <Compile Include="PayStatus.cs" />
@@ -119,6 +126,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\ClientChangingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\DirMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -128,6 +139,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\RegistrationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\TourViewPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:tour.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="500" d:DesignWidth="500"
-      Title="CatalogPage">
+      Title="CatalogPage" Loaded="Page_Loaded">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -26,19 +26,22 @@
         </StackPanel>
         <StackPanel Grid.Column="1">
             <ComboBox Name="country"></ComboBox>
-            <Slider Name="days"></Slider>
+            <StackPanel Orientation="Horizontal">
+            <Slider Name="days" Width="200" Minimum="1" Maximum="20"></Slider>
+                <TextBlock x:Name="d" >0 дней</TextBlock>
+            </StackPanel>
             <TextBlock Name="dayscount"></TextBlock>
             <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-                <RadioButton >2 звезды</RadioButton>
-                <RadioButton >3 звезды</RadioButton>
-                <RadioButton >4 звезды</RadioButton>
-                <RadioButton >5 звезд</RadioButton>
+                <CheckBox Checked="r1_Checked" Name="r1">2 звезды</CheckBox>
+                <CheckBox  Checked="r2_Checked" Name="r2">3 звезды</CheckBox>
+                <CheckBox Checked="r3_Checked" Name="r3">4 звезды</CheckBox>
+                <CheckBox Checked="r4_Checked"  Name="r4">5 звезд</CheckBox>
             </StackPanel>
 
             <Button VerticalAlignment="Bottom" Name="find" Style="{StaticResource basic}" Click="find_Click">Найти</Button>
         </StackPanel>
         <GroupBox Grid.Row="1" Grid.ColumnSpan="2" ScrollViewer.CanContentScroll="True">
-            
+            <Frame Name="tourview"></Frame>   
         </GroupBox>
     </Grid>
 </Page>
