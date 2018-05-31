@@ -9,6 +9,10 @@ namespace tour
     public class Payment
     {
         public int PaymentID { get; set; }
-        public PayStatus PayStatus { get; set; }
+        public string PStatusName { get; set; }
+        public override string ToString()
+        {
+            return PStatusName;
+        }
     }
 }

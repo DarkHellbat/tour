@@ -9,6 +9,6 @@ namespace tour
     public class PayStatus
     {
         public int Id { get; set; }
-        public string PStatusName { get; set; }
+      
     }
 }

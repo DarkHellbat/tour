@@ -24,5 +24,32 @@ namespace tour.Pages
         {
             InitializeComponent();
         }
+        DatabaseContext context = new DatabaseContext();
+        private void buy_Click(object sender, RoutedEventArgs e)
+        {
+            string l = client.SelectedItem.ToString();
+               string[] ln = l.Split(',');
+            Order newOrder = new Order()
+            {
+                Client = context.Clients.Where(c=>c.LastName==ln[0]&&c.FirstName==ln[1]).FirstOrDefault(),
+                Worker = variables.current,
+                OrderDate=DateTime.Now,
+                Payment = context.Payments.Where(p=>p.PStatusName==payType.Text).FirstOrDefault(), 
+            };
+            context.Orders.Add(newOrder);
+            context.SaveChanges();
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            foreach(var c in context.Clients)
+            {
+                client.Items.Add(c);
+            }
+            foreach(var p in context.Payments)
+            {
+                payType.Items.Add(p);
+            }
+        }
     }
 }

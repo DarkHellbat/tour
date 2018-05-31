@@ -5,10 +5,23 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:tour.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      d:DesignHeight="300" d:DesignWidth="500" Loaded="Page_Loaded"
       Title="BuyingPage">
 
     <Grid>
-        
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" >
+            <TextBlock TextAlignment="Center" Padding="10,10,25,10">Выберите покупателя</TextBlock>
+            <ComboBox Name="client"></ComboBox>
+  </StackPanel>
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                <TextBlock TextAlignment="Center" Padding="10,10,10,10">Выберите способ оплаты</TextBlock>
+                <ComboBox Name="payType">
+                </ComboBox>
+            </StackPanel>
+            <Button Name="buy" Click="buy_Click" Style="{StaticResource m}">Оформить</Button>
+        </StackPanel>
     </Grid>
+  
 </Page>

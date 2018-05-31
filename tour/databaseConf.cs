@@ -19,7 +19,6 @@ namespace tour
         public DbSet<Doc> Docs { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Payment> Payments { get; set; }
-        public DbSet<PayStatus> PayStatuses { get; set; }
         public DbSet<Position> Positions { get; set; }
         public DbSet<Tour> Tours { get; set; }
         public DbSet<Worker> Workers { get; set; }
@@ -35,7 +34,7 @@ namespace tour
             modelBuilder.Entity<Complain>().Property(c => c.Text).HasMaxLength(200);
             modelBuilder.Entity<CType>().Property(c => c.Type).HasMaxLength(50);
             modelBuilder.Entity<Doc>().Property(d => d.DocName).HasMaxLength(100);
-            modelBuilder.Entity<PayStatus>().Property(p=>p.PStatusName).HasMaxLength(50);
+            modelBuilder.Entity<Payment>().Property(p=>p.PStatusName).HasMaxLength(50);
             modelBuilder.Entity<Position>().Property(p => p.PositionName).HasMaxLength(50);
             modelBuilder.Entity<Tour>().Property(t=> t.Description).HasMaxLength(200);
             modelBuilder.Entity<Tour>().Property(t=>t.Destination).HasMaxLength(50);
