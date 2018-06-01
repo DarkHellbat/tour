@@ -13,6 +13,8 @@ namespace tour
         public static Client client = new Client();
         public static List<Tour> TourList = new List<Tour>();
         public static Tour Buy = new Tour();
+        public static Tour changing = new Tour();
+        public static bool IsChanging;
 
         public static void Redirect(string PageName)
         {
@@ -25,8 +27,9 @@ namespace tour
             variables.mnw.maincontainer.NavigationService.Navigate(new Uri(@"\Pages\LoginPage.xaml", UriKind.Relative));
         }
         
-        public static void Entered_As()
+        public static void GoBack()
         {
+            variables.mnw.maincontainer.NavigationService.GoBack();
           //string greeting = String.Format("Вы вошли как {0}, {1}", current.LastName, current.FirstName);  
             
         }

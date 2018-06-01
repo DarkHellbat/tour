@@ -9,11 +9,11 @@
       Title="DirMenu">
 
     <Grid>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel HorizontalAlignment="Center" >
             <TextBlock Name="entered_as" >Вы вошли в систему как</TextBlock>
-            <Button Style="{StaticResource basic}" Name="registration" Width="auto">Просмотреть отчеты по продажам</Button>
-            <Button Style="{StaticResource basic}" Name="findtour" Width="auto">Просмотреть список претензий</Button>
-
+           
         </StackPanel>
+        <Button Name="exit" VerticalAlignment="Bottom" Click="exit_Click">Выход</Button>
+
     </Grid>
 </Page>

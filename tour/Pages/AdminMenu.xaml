@@ -11,8 +11,9 @@
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Name="entered_as" >Вы вошли в систему как</TextBlock>
-            <Button Style="{StaticResource basic}" Name="clientlist" Width="auto">Просмотр и редактирование списка клиентов</Button>
-            <Button Style="{StaticResource basic}" Name="findtour" Width="auto">Добавление\ изменение тура</Button>
+            <Button Style="{StaticResource basic}" Name="clientlist" Width="auto" Click="clientlist_Click">Просмотр и редактирование списка клиентов</Button>
+            <Button Style="{StaticResource basic}" Name="findtour" Width="auto" Click="findtour_Click">Добавление\ изменение тура</Button>
+            <Button Name="exit" Click="exit_Click">Выход</Button>
 
         </StackPanel>
     </Grid>

@@ -1,0 +1,47 @@
+﻿<Page x:Class="tour.Pages.ChangeTourPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:tour.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="300"
+      Title="ChangeTourPage" Loaded="Page_Loaded">
+
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Padding="10,10,35,10">Название тура</TextBlock>
+                <TextBox Name="tourname"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Padding="10,10,45,10">Начало тура</TextBlock>
+                <DatePicker Name="beginning"></DatePicker>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Padding="10,10,50,10">Конец тура</TextBlock>
+                <DatePicker Name="ending"></DatePicker>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Padding="10,10,50,10">Стоимость</TextBlock>
+                <TextBox Name="cost"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Padding="10,10,75,10">Рейтинг</TextBlock>
+                <Slider Name="rate" Maximum="5" Minimum="2" Width="150"></Slider>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Padding="10,10,10,10">Место назначения</TextBlock>
+                <ComboBox Name="dest"></ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Padding="10,10,68,10">Описание</TextBlock>
+                <TextBox Name="descr" Height="100"></TextBox>
+            </StackPanel>
+                 
+        </StackPanel>
+        <Button Name="save" VerticalAlignment="Bottom" Click="save_Click" Width="90" Style="{StaticResource basic}">Сохранить</Button>
+        <Button Name="back" VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="back_Click"  Width="90" Style="{StaticResource basic}">Назад</Button>
+
+    </Grid>
+</Page>

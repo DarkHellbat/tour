@@ -67,3 +67,9 @@ E:\ITUniver\repos\tour\obj\Debug\Pages\TourViewPage.g.cs
 E:\ITUniver\repos\tour\obj\Debug\Pages\BuyingPage.baml
 E:\ITUniver\repos\tour\obj\Debug\Pages\ClientChangingPage.baml
 E:\ITUniver\repos\tour\obj\Debug\Pages\TourViewPage.baml
+E:\ITUniver\repos\tour\obj\Debug\Pages\ChangeTourPage.g.cs
+E:\ITUniver\repos\tour\obj\Debug\Pages\ClientView.g.cs
+E:\ITUniver\repos\tour\obj\Debug\Pages\ChangeTourPage.baml
+E:\ITUniver\repos\tour\obj\Debug\Pages\ClientView.baml
+E:\ITUniver\repos\tour\obj\Debug\Pages\TourView.g.cs
+E:\ITUniver\repos\tour\obj\Debug\Pages\TourView.baml

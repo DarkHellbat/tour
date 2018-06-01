@@ -1,0 +1,27 @@
+﻿<Page x:Class="tour.Pages.ClientView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:tour.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="500"
+      Title="ClientView" Loaded="Page_Loaded">
+
+    <Grid>
+        <DataGrid Name="clientview" Height="300" SelectionChanged="clientview_SelectionChanged" AreRowDetailsFrozen="True" SelectionMode="Single">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding LastName}" CanUserResize="False"></DataGridTextColumn>
+                <DataGridTextColumn Header="Имя" Binding="{Binding FirstName}"  CanUserResize="False"></DataGridTextColumn>
+                <DataGridTextColumn Header="Отчество" Binding="{Binding SecondName}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Пол" Binding="{Binding Gender}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Телефон" Binding="{Binding Phone}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Пасспорт" Binding="{Binding PassportNum}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="E-mail" Binding="{Binding Email}" ></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button VerticalAlignment="Bottom" HorizontalAlignment="Left" Name="back" Click="back_Click" >Назад</Button>
+        <Button VerticalAlignment="Bottom" HorizontalAlignment="Center" Name="change" Click="change_Click">Изменить</Button>
+
+    </Grid>
+</Page>

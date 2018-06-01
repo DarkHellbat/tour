@@ -34,10 +34,13 @@ namespace tour.Pages
                 Client = context.Clients.Where(c=>c.LastName==ln[0]&&c.FirstName==ln[1]).FirstOrDefault(),
                 Worker = variables.current,
                 OrderDate=DateTime.Now,
-                Payment = context.Payments.Where(p=>p.PStatusName==payType.Text).FirstOrDefault(), 
+                Payment = context.Payments.Where(p=>p.PStatusName==payType.Text).FirstOrDefault(),
+                Tour = variables.Buy 
             };
             context.Orders.Add(newOrder);
             context.SaveChanges();
+            MessageBox.Show("Тур добавлен в заказы");
+            variables.Redirect("AgentMenu");
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)

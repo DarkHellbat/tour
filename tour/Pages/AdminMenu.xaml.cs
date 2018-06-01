@@ -24,5 +24,20 @@ namespace tour.Pages
         {
             InitializeComponent();
         }
+
+        private void clientlist_Click(object sender, RoutedEventArgs e)
+        {
+            variables.Redirect("ClientView");
+        }
+
+        private void findtour_Click(object sender, RoutedEventArgs e)
+        {
+            variables.Redirect("ChangeTourPage");
+        }
+
+        private void exit_Click(object sender, RoutedEventArgs e)
+        {
+            variables.Exit();
+        }
     }
 }

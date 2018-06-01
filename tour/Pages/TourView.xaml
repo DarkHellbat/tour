@@ -1,0 +1,27 @@
+﻿<Page x:Class="tour.Pages.TourView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:tour.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="500"
+      Title="TourView" Loaded="Page_Loaded">
+
+    <Grid>
+        <DataGrid Name="tourview" Height="300" SelectionChanged="tourview_SelectionChanged"  AreRowDetailsFrozen="True" SelectionMode="Single">
+            <DataGrid.Columns>
+                <DataGridHyperlinkColumn Header="Название тура" Binding="{Binding TourName}" CanUserResize="False"></DataGridHyperlinkColumn>
+                <DataGridTextColumn Header="Дата начала" Binding="{Binding DateBeginning}"  CanUserResize="False"></DataGridTextColumn>
+                <DataGridTextColumn Header="Дата окончания" Binding="{Binding DateEnding}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Место назначения" Binding="{Binding Destination}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Описание" Binding="{Binding Description}" ></DataGridTextColumn>
+                <DataGridTextColumn Header="Рейтинг" Binding="{Binding Rate}" ></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button VerticalAlignment="Bottom" HorizontalAlignment="Left" Name="back" Click="back_Click">Назад</Button>
+        <Button VerticalAlignment="Bottom" HorizontalAlignment="Center" Name="change" Click="change_Click">Изменить</Button>
+        <Button VerticalAlignment="Bottom" HorizontalAlignment="Right" Name="del" Click="del_Click">Удалить</Button>
+
+    </Grid>
+</Page>

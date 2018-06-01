@@ -24,5 +24,10 @@ namespace tour.Pages
         {
             InitializeComponent();
         }
+
+        private void exit_Click(object sender, RoutedEventArgs e)
+        {
+            variables.Exit();
+        }
     }
 }

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 E:\ITUniver\repos\tour\App.xaml
-10457025651
+13-4697291
 
-296468050
+32-1343037276
 18571921419
-MainWindow.xaml;Pages\AdminMenu.xaml;Pages\AgentMenu.xaml;Pages\BuyingPage.xaml;Pages\CatalogPage.xaml;Pages\ClientChangingPage.xaml;Pages\DirMenu.xaml;Pages\LoginPage.xaml;Pages\RegistrationPage.xaml;Pages\TourViewPage.xaml;
+MainWindow.xaml;Pages\AdminMenu.xaml;Pages\AgentMenu.xaml;Pages\BuyingPage.xaml;Pages\CatalogPage.xaml;Pages\ChangeTourPage.xaml;Pages\ClientChangingPage.xaml;Pages\ClientView.xaml;Pages\DirMenu.xaml;Pages\LoginPage.xaml;Pages\RegistrationPage.xaml;Pages\TourView.xaml;Pages\TourViewPage.xaml;
 
 False
 

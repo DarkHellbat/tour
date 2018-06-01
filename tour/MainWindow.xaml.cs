@@ -28,7 +28,7 @@ namespace tour
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            maincontainer.NavigationService.Navigate(new Uri(@"\Pages\LoginPage.xaml", UriKind.Relative));
+            variables.Redirect("TourView");
         }
     }
 }

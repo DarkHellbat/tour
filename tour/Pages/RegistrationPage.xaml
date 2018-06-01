@@ -11,8 +11,8 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="19*"/>
-            <ColumnDefinition Width="75*"/>
-            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="90*"/>
+            <ColumnDefinition Width="10*"/>
             <ColumnDefinition Width="84*"/>
             <ColumnDefinition Width="83*"/>
             <ColumnDefinition Width="43*"/>
@@ -34,13 +34,13 @@
             <RowDefinition Height="31*"/>
             <RowDefinition Height="23*"/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Row="1" HorizontalAlignment="Right" Width="69" Grid.Column="1">First name</TextBlock>
-        <TextBlock Grid.Row="2" HorizontalAlignment="Right" Width="84" Grid.ColumnSpan="2">Second name</TextBlock>
-        <TextBlock Grid.Row="4" HorizontalAlignment="Right" Width="47" Grid.Column="1">E-mail</TextBlock>
-        <TextBlock Grid.Row="3" HorizontalAlignment="Right" Width="66" Grid.Column="1" >Last name</TextBlock>
-        <TextBlock Grid.Row="5" HorizontalAlignment="Right" Width="82" Grid.ColumnSpan="2">Date of birth</TextBlock>
-        <TextBlock Grid.Row="6" HorizontalAlignment="Right" Width="41" Grid.Column="1">Phone</TextBlock>
-        <TextBlock Grid.Row="8" HorizontalAlignment="Right" Width="53" Grid.Column="1">Gender</TextBlock>
+        <TextBlock Grid.Row="1" HorizontalAlignment="Right"  Grid.Column="1" Width="32">Имя</TextBlock>
+        <TextBlock Grid.Row="2" HorizontalAlignment="Right" Grid.Column="1" Width="67">Отчество</TextBlock>
+        <TextBlock Grid.Row="4" HorizontalAlignment="Right"  Grid.Column="1" Width="47">E-mail</TextBlock>
+        <TextBlock Grid.Row="3" HorizontalAlignment="Right"  Grid.Column="1" Width="65" >Фамилия</TextBlock>
+        <TextBlock Grid.Row="5" HorizontalAlignment="Right" Grid.ColumnSpan="2" Width="108">Дата рождения</TextBlock>
+        <TextBlock Grid.Row="6" HorizontalAlignment="Right" Grid.Column="1" Width="53">Телефон</TextBlock>
+        <TextBlock Grid.Row="8" HorizontalAlignment="Right" Grid.Column="1" Width="24">Пол</TextBlock>
 
 
         <TextBox Grid.Row="1" Grid.Column="3" Name="fname" Grid.ColumnSpan="3" Height="Auto" Margin="30,11" Width="Auto"></TextBox>
@@ -49,12 +49,12 @@
         <TextBox Grid.Row="4" Grid.Column="3" Name="email"  Grid.ColumnSpan="3" Height="Auto" Margin="30,11" Width="Auto"></TextBox>
         <DatePicker Grid.Row="5" Grid.Column="3" Name="birthdate" Grid.ColumnSpan="3"></DatePicker>
         <TextBox Grid.Row="6" Grid.Column="3" Name="phone" Grid.ColumnSpan="3" Height="Auto" Margin="30,10,30,11" Width="Auto" ></TextBox>
-               <ComboBox Grid.Row="8" Grid.Column="3" Name="gender" Grid.ColumnSpan="3" Margin="30,6,30,1" Height="Auto" Width="Auto" ></ComboBox>
+        <ComboBox Grid.Row="8" Grid.Column="3" Name="gender" Grid.ColumnSpan="3" Margin="30,6,30,1" Height="Auto" Width="Auto" ></ComboBox>
         <TextBlock Grid.Row="7" Grid.Column="1"> Номер паспорта</TextBlock>
-        <TextBox Name="passnum" Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="2"></TextBox>
+        <TextBox Name="passnum" Grid.Row="7" Grid.Column="3" Grid.ColumnSpan="2" Height="Auto" Margin="9,11,8,11" Width="Auto"></TextBox>
 
-        <Button Style="{StaticResource basic}" Name="Register" Grid.Row="11" Grid.Column="1" Click="Register_Click"  Grid.ColumnSpan="2">Register</Button>
-        <Button Style="{StaticResource basic}" Name="exit" Grid.Row="12" Grid.Column="1" Click="exit_Click"  Grid.ColumnSpan="2">Exit</Button>
+        <Button Style="{StaticResource basic}" Name="Register" Grid.Row="11" Grid.Column="1" Click="Register_Click" Height="Auto" Margin="25,8,4,8" Width="Auto">Сохранить</Button>
+        <Button Style="{StaticResource basic}" Name="exit" Grid.Row="12" Grid.Column="1" Click="exit_Click" Height="Auto" Margin="25,6,4,5" Width="Auto">Выход</Button>
 
 
     </Grid>

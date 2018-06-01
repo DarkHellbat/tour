@@ -82,8 +82,14 @@
     <Compile Include="Pages\CatalogPage.xaml.cs">
       <DependentUpon>CatalogPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ChangeTourPage.xaml.cs">
+      <DependentUpon>ChangeTourPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ClientChangingPage.xaml.cs">
       <DependentUpon>ClientChangingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ClientView.xaml.cs">
+      <DependentUpon>ClientView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\DirMenu.xaml.cs">
       <DependentUpon>DirMenu.xaml</DependentUpon>
@@ -93,6 +99,9 @@
     </Compile>
     <Compile Include="Pages\RegistrationPage.xaml.cs">
       <DependentUpon>RegistrationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TourView.xaml.cs">
+      <DependentUpon>TourView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\TourViewPage.xaml.cs">
       <DependentUpon>TourViewPage.xaml</DependentUpon>
@@ -133,7 +142,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\ChangeTourPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\ClientChangingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ClientView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -146,6 +163,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\RegistrationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\TourView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
