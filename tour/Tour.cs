@@ -18,5 +18,9 @@ namespace tour
         public int Rate { get; set; }
         public Doc ReqDoc { get; set; }
         public string PicName { get; set; }
+        public override string ToString()
+        {
+            return TourName;
+        }
     }
 }

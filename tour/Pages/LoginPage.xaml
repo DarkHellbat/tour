@@ -16,18 +16,18 @@
             <RowDefinition Height="62*"/>
             <RowDefinition Height="13*"/>
         </Grid.RowDefinitions>
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="75,68,75,6" Grid.ColumnSpan="2" Height="174" Width="150">
-            <TextBlock Padding="20">Login</TextBlock>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.ColumnSpan="2" Height="174" Width="150">
+            <TextBlock Padding="20">Логин</TextBlock>
             <TextBox Name="login"/>
-            <TextBlock Padding="20">Password</TextBlock>
+            <TextBlock Padding="20">Пароль</TextBlock>
             <PasswordBox Name="password"/>
             <!--<CheckBox Name="show" Checked="show_Checked">Show password</CheckBox>-->
         </StackPanel>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal"  Grid.Row="1" Grid.Column="1" Height="20" Margin="51,14,50,18" Width="50">
-            <Button Name="log" Click="log_Click" VerticalAlignment="Center" Style="{StaticResource basic}">Log in</Button>
+            <Button Name="log" Click="log_Click" VerticalAlignment="Center" Style="{StaticResource basic}">Войти</Button>
         </StackPanel>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal"  Grid.Row="1" Grid.Column="0" Height="20" Margin="50,14,49,18" Width="50">
-            <Button Name="back" Click="back_Click"  VerticalAlignment="Bottom" Style="{StaticResource basic}">Go back</Button>
+            <Button Name="back" Click="back_Click"  VerticalAlignment="Bottom" Style="{StaticResource basic}">Создание БД</Button>
         </StackPanel>
 
     </Grid>

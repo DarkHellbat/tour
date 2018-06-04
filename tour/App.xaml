@@ -34,8 +34,9 @@
             <Setter Property="Foreground" Value="#132619"/>
         </Style>
         <Style TargetType="TextBlock">
-            <Setter Property="FontFamily" Value="Segoe Script"/>
+            <!--<Setter Property="FontFamily" Value="Segoe Script"/>-->
             <Setter Property="FontWeight" Value="Heavy"/>
+            <Setter Property="FontSize" Value="14"/>
             <Setter Property="Foreground" Value="#132619"/>
         </Style>
     </Application.Resources>

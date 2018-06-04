@@ -28,7 +28,7 @@ namespace tour
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            variables.Redirect("TourView");
+            variables.Redirect("LoginPage");
         }
     }
 }

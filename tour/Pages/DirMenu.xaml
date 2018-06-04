@@ -5,15 +5,33 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:tour.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
-      Title="DirMenu">
+      d:DesignHeight="400" d:DesignWidth="400"
+      Title="DirMenu" Loaded="Page_Loaded">
 
     <Grid>
         <StackPanel HorizontalAlignment="Center" >
             <TextBlock Name="entered_as" >Вы вошли в систему как</TextBlock>
-           
+            <StackPanel Orientation="Horizontal">
+                <RadioButton Name="orderreport" Checked="orderreport_Checked"  >Отчет по заказам</RadioButton>
+                <RadioButton Name="complreport" Checked="complreport_Checked">Отчет по претензиям</RadioButton>
+            </StackPanel>
+            <DataGrid Name="orderview" Visibility="Hidden" AreRowDetailsFrozen="True" SelectionMode="Single">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Название тура" Binding="{Binding Tour}" CanUserResize="False"></DataGridTextColumn>
+                    <!--<DataGridTextColumn Header="Стоимость" Binding="{Binding FirstName}"  CanUserResize="False"></DataGridTextColumn>-->
+                    <DataGridTextColumn Header="Продано" Binding="{Binding Worker}" ></DataGridTextColumn>
+                    <DataGridTextColumn Header="Дата продажи" Binding="{Binding OrderDate}" ></DataGridTextColumn>
+                 </DataGrid.Columns>
+            </DataGrid>
+            <DataGrid Name="complview"  Visibility="Hidden" AreRowDetailsFrozen="True" SelectionMode="Single">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Заказ" Binding="{Binding Order}" CanUserResize="False"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Претензия" Binding="{Binding Type}" ></DataGridTextColumn>
+             </DataGrid.Columns>
+            </DataGrid>
         </StackPanel>
-        <Button Name="exit" VerticalAlignment="Bottom" Click="exit_Click">Выход</Button>
+        <Button Style="{StaticResource basic}" Name="print" VerticalAlignment="Bottom" Click="print_Click">Печать</Button>
+        <Button Style="{StaticResource basic}" Name="exit" VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="exit_Click">Выход</Button>
 
     </Grid>
 </Page>
